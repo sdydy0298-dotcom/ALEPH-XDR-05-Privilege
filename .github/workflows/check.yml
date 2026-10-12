@@ -1,0 +1,26 @@
+name: Verify XDR-05 Privilege Defense
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Replay original Wazuh privilege fixture
+        run: npm run xdr:run -- privilege
+      - name: Verify account/session isolation and normal user protection
+        run: npm test
+      - name: Replay original 26 alerts to verify determinism
+        run: npm run xdr:run -- privilege
+      - name: Build Vercel static interface
+        run: npm run build
+      - name: Confirm committed reports and static site match replay
+        run: |
+          git diff --exit-code -- xdr/privilege/result.json xdr/alerts.log xdr/temporary-deny.json public/report.json public/samples.json public/decide.mjs public/index.html public/app.js public/styles.css
