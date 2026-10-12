@@ -1,0 +1,167 @@
+{
+  "schema": "aleph.xdr.result.v1",
+  "moduleKey": "privilege",
+  "decisions": [
+    {
+      "alertId": "pv-01",
+      "action": "block",
+      "confidence": 0.96,
+      "reason": "T1078-Unauthorized-Admin-Group-Membership"
+    },
+    {
+      "alertId": "pv-02",
+      "action": "block",
+      "confidence": 0.95,
+      "reason": "T1068-Privileged-Command-Unusual-Context"
+    },
+    {
+      "alertId": "pv-03",
+      "action": "block",
+      "confidence": 0.95,
+      "reason": "T1068-Privileged-Command-Unusual-Context"
+    },
+    {
+      "alertId": "pv-04",
+      "action": "block",
+      "confidence": 0.99,
+      "reason": "T1068-T1078-Group-Command-Correlation"
+    },
+    {
+      "alertId": "pv-05",
+      "action": "block",
+      "confidence": 0.98,
+      "reason": "T1078-Unauthorized-Admin-Group-Membership"
+    },
+    {
+      "alertId": "pv-06",
+      "action": "block",
+      "confidence": 0.97,
+      "reason": "T1068-Admin-Session-Privilege-Change"
+    },
+    {
+      "alertId": "pv-07",
+      "action": "block",
+      "confidence": 0.99,
+      "reason": "T1068-T1078-Group-Command-Correlation"
+    },
+    {
+      "alertId": "pv-08",
+      "action": "block",
+      "confidence": 0.96,
+      "reason": "T1068-Privileged-Command-Unusual-Context"
+    },
+    {
+      "alertId": "pv-09",
+      "action": "block",
+      "confidence": 0.97,
+      "reason": "T1078-Rapid-Admin-Reentry"
+    },
+    {
+      "alertId": "pv-10",
+      "action": "alert",
+      "confidence": 0.64,
+      "reason": "T1068-T1078-Ambiguous-Privilege-Activity"
+    },
+    {
+      "alertId": "pv-11",
+      "action": "alert",
+      "confidence": 0.64,
+      "reason": "T1068-T1078-Ambiguous-Privilege-Activity"
+    },
+    {
+      "alertId": "pv-12",
+      "action": "alert",
+      "confidence": 0.64,
+      "reason": "T1068-T1078-Ambiguous-Privilege-Activity"
+    },
+    {
+      "alertId": "pv-13",
+      "action": "alert",
+      "confidence": 0.64,
+      "reason": "T1068-T1078-Ambiguous-Privilege-Activity"
+    },
+    {
+      "alertId": "pv-14",
+      "action": "alert",
+      "confidence": 0.64,
+      "reason": "T1068-T1078-Ambiguous-Privilege-Activity"
+    },
+    {
+      "alertId": "pv-15",
+      "action": "alert",
+      "confidence": 0.64,
+      "reason": "T1068-T1078-Ambiguous-Privilege-Activity"
+    },
+    {
+      "alertId": "pv-16",
+      "action": "alert",
+      "confidence": 0.64,
+      "reason": "T1068-T1078-Ambiguous-Privilege-Activity"
+    },
+    {
+      "alertId": "pv-17",
+      "action": "alert",
+      "confidence": 0.64,
+      "reason": "T1068-T1078-Ambiguous-Privilege-Activity"
+    },
+    {
+      "alertId": "pv-18",
+      "action": "record",
+      "confidence": 0.07,
+      "reason": "T1068-T1078-Routine-Account-Activity"
+    },
+    {
+      "alertId": "pv-19",
+      "action": "record",
+      "confidence": 0.07,
+      "reason": "T1068-T1078-Routine-Account-Activity"
+    },
+    {
+      "alertId": "pv-20",
+      "action": "record",
+      "confidence": 0.07,
+      "reason": "T1068-T1078-Routine-Account-Activity"
+    },
+    {
+      "alertId": "pv-21",
+      "action": "record",
+      "confidence": 0.07,
+      "reason": "T1068-T1078-Routine-Account-Activity"
+    },
+    {
+      "alertId": "pv-22",
+      "action": "record",
+      "confidence": 0.07,
+      "reason": "T1068-T1078-Routine-Account-Activity"
+    },
+    {
+      "alertId": "pv-23",
+      "action": "record",
+      "confidence": 0.07,
+      "reason": "T1068-T1078-Routine-Account-Activity"
+    },
+    {
+      "alertId": "pv-24",
+      "action": "record",
+      "confidence": 0.07,
+      "reason": "T1068-T1078-Routine-Account-Activity"
+    },
+    {
+      "alertId": "pv-25",
+      "action": "record",
+      "confidence": 0.07,
+      "reason": "T1068-T1078-Routine-Account-Activity"
+    },
+    {
+      "alertId": "pv-26",
+      "action": "record",
+      "confidence": 0.07,
+      "reason": "T1068-T1078-Routine-Account-Activity"
+    }
+  ],
+  "counts": {
+    "block": 9,
+    "alert": 8,
+    "record": 9
+  }
+}

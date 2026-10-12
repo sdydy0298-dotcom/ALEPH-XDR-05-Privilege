@@ -1,1 +1,110 @@
-[]
+[
+  {
+    "id": "xdr05-pv-01",
+    "action": "deny",
+    "scope": "account-source",
+    "account": "user01",
+    "source": "203.0.113.11",
+    "sessionKey": "user01@203.0.113.11",
+    "alertId": "pv-01",
+    "reason": "T1078-Unauthorized-Admin-Group-Membership",
+    "createdAt": "2026-10-13T00:00:00.000Z",
+    "expiresAt": "2026-10-13T00:15:00.000Z"
+  },
+  {
+    "id": "xdr05-pv-02",
+    "action": "deny",
+    "scope": "account-source",
+    "account": "user01",
+    "source": "203.0.113.11",
+    "sessionKey": "user01@203.0.113.11",
+    "alertId": "pv-02",
+    "reason": "T1068-Privileged-Command-Unusual-Context",
+    "createdAt": "2026-10-13T00:00:00.000Z",
+    "expiresAt": "2026-10-13T00:15:00.000Z"
+  },
+  {
+    "id": "xdr05-pv-03",
+    "action": "deny",
+    "scope": "account-source",
+    "account": "user02",
+    "source": "198.51.100.11",
+    "sessionKey": "user02@198.51.100.11",
+    "alertId": "pv-03",
+    "reason": "T1068-Privileged-Command-Unusual-Context",
+    "createdAt": "2026-10-13T00:00:00.000Z",
+    "expiresAt": "2026-10-13T00:15:00.000Z"
+  },
+  {
+    "id": "xdr05-pv-04",
+    "action": "deny",
+    "scope": "account-source",
+    "account": "user03",
+    "source": "192.0.2.11",
+    "sessionKey": "user03@192.0.2.11",
+    "alertId": "pv-04",
+    "reason": "T1068-T1078-Group-Command-Correlation",
+    "createdAt": "2026-10-13T00:00:00.000Z",
+    "expiresAt": "2026-10-13T00:15:00.000Z"
+  },
+  {
+    "id": "xdr05-pv-05",
+    "action": "deny",
+    "scope": "account-source",
+    "account": "user04",
+    "source": "203.0.113.17",
+    "sessionKey": "user04@203.0.113.17",
+    "alertId": "pv-05",
+    "reason": "T1078-Unauthorized-Admin-Group-Membership",
+    "createdAt": "2026-10-13T00:00:00.000Z",
+    "expiresAt": "2026-10-13T00:15:00.000Z"
+  },
+  {
+    "id": "xdr05-pv-06",
+    "action": "deny",
+    "scope": "account-source",
+    "account": "user05",
+    "source": "198.51.100.17",
+    "sessionKey": "user05@198.51.100.17",
+    "alertId": "pv-06",
+    "reason": "T1068-Admin-Session-Privilege-Change",
+    "createdAt": "2026-10-13T00:00:00.000Z",
+    "expiresAt": "2026-10-13T00:15:00.000Z"
+  },
+  {
+    "id": "xdr05-pv-07",
+    "action": "deny",
+    "scope": "account-source",
+    "account": "user06",
+    "source": "192.0.2.17",
+    "sessionKey": "user06@192.0.2.17",
+    "alertId": "pv-07",
+    "reason": "T1068-T1078-Group-Command-Correlation",
+    "createdAt": "2026-10-13T00:00:00.000Z",
+    "expiresAt": "2026-10-13T00:15:00.000Z"
+  },
+  {
+    "id": "xdr05-pv-08",
+    "action": "deny",
+    "scope": "account-source",
+    "account": "user07",
+    "source": "203.0.113.27",
+    "sessionKey": "user07@203.0.113.27",
+    "alertId": "pv-08",
+    "reason": "T1068-Privileged-Command-Unusual-Context",
+    "createdAt": "2026-10-13T00:00:00.000Z",
+    "expiresAt": "2026-10-13T00:15:00.000Z"
+  },
+  {
+    "id": "xdr05-pv-09",
+    "action": "deny",
+    "scope": "account-source",
+    "account": "user08",
+    "source": "198.51.100.27",
+    "sessionKey": "user08@198.51.100.27",
+    "alertId": "pv-09",
+    "reason": "T1078-Rapid-Admin-Reentry",
+    "createdAt": "2026-10-13T00:00:00.000Z",
+    "expiresAt": "2026-10-13T00:15:00.000Z"
+  }
+]

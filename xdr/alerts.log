@@ -1,0 +1,17 @@
+{"alertId":"pv-01","action":"block","confidence":0.96,"reason":"T1078-Unauthorized-Admin-Group-Membership","at":"2026-10-13T00:00:00.000Z"}
+{"alertId":"pv-02","action":"block","confidence":0.95,"reason":"T1068-Privileged-Command-Unusual-Context","at":"2026-10-13T00:00:00.000Z"}
+{"alertId":"pv-03","action":"block","confidence":0.95,"reason":"T1068-Privileged-Command-Unusual-Context","at":"2026-10-13T00:00:00.000Z"}
+{"alertId":"pv-04","action":"block","confidence":0.99,"reason":"T1068-T1078-Group-Command-Correlation","at":"2026-10-13T00:00:00.000Z"}
+{"alertId":"pv-05","action":"block","confidence":0.98,"reason":"T1078-Unauthorized-Admin-Group-Membership","at":"2026-10-13T00:00:00.000Z"}
+{"alertId":"pv-06","action":"block","confidence":0.97,"reason":"T1068-Admin-Session-Privilege-Change","at":"2026-10-13T00:00:00.000Z"}
+{"alertId":"pv-07","action":"block","confidence":0.99,"reason":"T1068-T1078-Group-Command-Correlation","at":"2026-10-13T00:00:00.000Z"}
+{"alertId":"pv-08","action":"block","confidence":0.96,"reason":"T1068-Privileged-Command-Unusual-Context","at":"2026-10-13T00:00:00.000Z"}
+{"alertId":"pv-09","action":"block","confidence":0.97,"reason":"T1078-Rapid-Admin-Reentry","at":"2026-10-13T00:00:00.000Z"}
+{"alertId":"pv-10","action":"alert","confidence":0.64,"reason":"T1068-T1078-Ambiguous-Privilege-Activity","at":"2026-10-13T00:00:00.000Z"}
+{"alertId":"pv-11","action":"alert","confidence":0.64,"reason":"T1068-T1078-Ambiguous-Privilege-Activity","at":"2026-10-13T00:00:00.000Z"}
+{"alertId":"pv-12","action":"alert","confidence":0.64,"reason":"T1068-T1078-Ambiguous-Privilege-Activity","at":"2026-10-13T00:00:00.000Z"}
+{"alertId":"pv-13","action":"alert","confidence":0.64,"reason":"T1068-T1078-Ambiguous-Privilege-Activity","at":"2026-10-13T00:00:00.000Z"}
+{"alertId":"pv-14","action":"alert","confidence":0.64,"reason":"T1068-T1078-Ambiguous-Privilege-Activity","at":"2026-10-13T00:00:00.000Z"}
+{"alertId":"pv-15","action":"alert","confidence":0.64,"reason":"T1068-T1078-Ambiguous-Privilege-Activity","at":"2026-10-13T00:00:00.000Z"}
+{"alertId":"pv-16","action":"alert","confidence":0.64,"reason":"T1068-T1078-Ambiguous-Privilege-Activity","at":"2026-10-13T00:00:00.000Z"}
+{"alertId":"pv-17","action":"alert","confidence":0.64,"reason":"T1068-T1078-Ambiguous-Privilege-Activity","at":"2026-10-13T00:00:00.000Z"}
