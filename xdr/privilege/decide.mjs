@@ -40,7 +40,7 @@ function examine(alert) {
   const negatedAdmin=/관리자\s*그룹(?:은|이)?\s*아닙|관리자\s*그룹.*아닙|not\s+(?:an?\s+)?admin(?:istrator)?\s+group|non.admin\s+group/.test(desc);
   const highGroup=/^(?:administrators|administrators group|domain admins|local administrators|sudo|wheel|enterprise admins)$/i.test(group);
   const adminGroupText=/관리자\s*그룹|administrators?\s+group|domain\s+admins/.test(desc);
-  const promoted=/추가됐|추가되|추가했|들어갔|들어가고|들어왔|가입|승격|재가입|다시\s*관리자|group\s+added|added\s+to|promoted|elevated/.test(desc)
+  const promoted=/추가|들어갔|들어가고|들어왔|가입|승격|재가입|다시\s*관리자|group\s+added|added\s+to|promoted|elevated/.test(desc)
     || /^(?:add|added|join|joined|promoted)$/i.test(str(data.action));
   const groupEntry=!negatedAdmin && (adminGroupText || highGroup) && promoted;
   const adminCommand=/관리자\s*명령|관리자\s*권한.{0,16}명령|권한\s*명령|privileged\s+command|elevated\s+command|runas|sudo\b/.test(desc);
