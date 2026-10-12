@@ -1,0 +1,11 @@
+{
+  "description": "XDR-05 교육용 기존 ZTNA 계정 정책. XDR 응답 모듈은 이 파일을 변경하지 않음",
+  "allow": [
+    {
+      "id": "baseline-allow",
+      "action": "allow",
+      "description": "추가 거부 정책이 없는 정상 계정 세션 허용"
+    }
+  ],
+  "deny": []
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "name": "T1078-Unauthorized-Admin-Group-Membership",
+    "condition": "기존 평범한 계정이 로컬/도메인 관리자 그룹에 신규 추가되거나 제거 후 곧바로 재가입한 고위험 Wazuh 경보. 관리자 그룹이 아닌 그룹 추가는 제외",
+    "evidence": "MITRE ATT&CK T1078: 정상 계정의 관리자 그룹 권한 오용은 탈취 계정을 활용한 권한 상승 신호."
+  },
+  {
+    "name": "T1068-Privileged-Command-Unusual-Context",
+    "condition": "관리자 명령 실행이 첫 접속 출처·업무 시간 밖·방금 승격·다른 계정 가장 등 이상 정황과 결합된 경우",
+    "evidence": "MITRE ATT&CK T1068 및 T1078: 상승한 권한을 낯선 시간/출처·계정에서 사용하는 행위는 악용 징후."
+  },
+  {
+    "name": "T1068-Admin-Session-Privilege-Change",
+    "condition": "평소 일반 권한이던 로그인 세션이 관리자 권한으로 바뀌고 첫 출처 등 이상 증거가 동반된 경우",
+    "evidence": "MITRE ATT&CK T1068: 세션 권한 상승은 의도하지 않은 고권한 획득을 나타낼 수 있음."
+  },
+  {
+    "name": "T1078-Rapid-Admin-Reentry",
+    "condition": "관리자 그룹에서 제거된 직후 1분 안팎으로 다시 가입하거나 반복 승격되는 경우",
+    "evidence": "MITRE ATT&CK T1078: 탈취된 유효 계정의 권한 회복 및 재획득은 위험한 계정 조작의 신호."
+  },
+  {
+    "name": "T1068-T1078-Group-Command-Correlation",
+    "condition": "일반 계정이 관리자 그룹에 새로 포함된 직후 관리자 명령을 실행하거나 업무 시간 밖에서 두 이벤트가 함께 발견된 경우",
+    "evidence": "MITRE ATT&CK T1068 및 T1078: 관리자 그룹 변경 뒤 즉시 실행하는 고권한 명령은 높은 확신도의 권한 악용 연쇄."
+  },
+  {
+    "name": "T1068-T1078-Ambiguous-Privilege-Activity",
+    "condition": "한 차례 UAC 창, 취소·실패한 명령, 비관리자 그룹 변경, 교실 작업 등 관련 경보만 있고 악용 증거가 불충분한 경우",
+    "evidence": "MITRE ATT&CK T1068 및 T1078: 단일/실패/합법적 변경은 권한 탈취가 확정되지 않았으므로 차단 대신 알림."
+  },
+  {
+    "name": "T1068-T1078-Routine-Account-Activity",
+    "condition": "일반 로그인·로그아웃·조회·비밀번호 갱신 등 관리자 권한 악용 근거가 없는 정상 이벤트",
+    "evidence": "MITRE ATT&CK T1068 및 T1078: 정상 인증·일반 계정 조회는 권한 상승 악용을 증명하지 않음."
+  }
+]
