@@ -44,8 +44,8 @@ function examine(alert) {
     || /^(?:add|added|join|joined|promoted)$/i.test(str(data.action));
   const groupEntry=!negatedAdmin && (adminGroupText || highGroup) && promoted;
   const adminCommand=/관리자\s*명령|관리자\s*권한.{0,16}명령|권한\s*명령|privileged\s+command|elevated\s+command|runas|sudo\b/.test(desc);
-  const commandRan=adminCommand && /실행|사용|시도|run|executed|invoke/.test(desc);
-  const newSource=/처음\s*보는\s*(?:주소|ip)|낯선\s*(?:ip|주소)|알려지지\s*않는\s*(?:주소|ip)|unknown\s+source|unrecognized\s+(?:ip|source)|new\s+ip/.test(desc);
+  const commandRan=(adminCommand || (groupEntry && /명령\s*실행/.test(desc))) && /실행|사용|시도|run|executed|invoke/.test(desc);
+  const newSource=/처음\s*보는\s*(?:주소|ip)|(?:요청\s*)?주소(?:는|가)?\s*처음\s*봅|낯선\s*(?:ip|주소)|알려지지\s*않는\s*(?:주소|ip)|unknown\s+source|unrecognized\s+(?:ip|source)|new\s+ip/.test(desc);
   const offHours=/수업\s*시간\s*밖|업무\s*시간\s*밖|업무처럼\s*보이지\s*않는\s*시각|야간|after.hours|off.hours|outside\s+business\s+hours/.test(desc);
   const freshAdmin=/방금\s*관리자가|곧바로|직후|바로\s*권한|just\s+elevated|immediately\s+after/.test(desc);
   const otherAccount=/다른\s*계정의\s*권한|다른\s*사용자.*권한|another\s+account|impersonat|different\s+account/.test(desc);
