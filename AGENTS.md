@@ -1,0 +1,11 @@
+# ALEPH XDR-05 privilege escalation (account-session revocation simulation)
+- Work only in `sdydy0298-dotcom/ALEPH-XDR-05-Privilege`, never overwrite XDR-01 through XDR-04.
+- The official `xdr/fixtures/privilege.json` (26 original alerts) stays byte-identical to ChoiTimo upstream.
+- The official `scripts/xdr-run.mjs` stays byte-identical to upstream and writes `aleph.xdr.result.v1`.
+- Pure standalone `xdr/privilege/decide.mjs` exports `decide(alert)`; no imports, I/O, network, external packages or clock.
+- Thresholds: >=0.85 block, >=0.50 alert, otherwise record.
+- IMPORTANT: do not enforce account events as IP-only network blocks. Dynamic deny rules match **both** account and source IP as a mock session key. Unknown session tokens are not stored; the real authentication provider is not integrated.
+- The existing `ztna/rules.json` is read-only. `respond.mjs` alone writes one-line notification entries and 15-minute temporary session deny rules with alertId.
+- Do not include private keys, tokens, cookies, raw log payloads, full request headers or passwords in public files or logs.
+- Run `npm run xdr:run -- privilege`, `npm test`, `npm run build`; generated reports must be deterministic and match committed files.
+- Website is explicitly a static/offline educational demonstration; no real Wazuh or production ZTNA is connected.
